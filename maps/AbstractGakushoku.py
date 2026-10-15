@@ -1,14 +1,12 @@
-from abc import ABC, abstractmethod
-class AbstractGakushoku(ABC):
+from maps.GakushokuSample import GakushokuSample
 
-    @abstractmethod
-    def get_menu(self):
-        pass
-    
-    @abstractmethod
-    def get_summary(self):
-        pass
-    
-    @abstractmethod
-    def get_author(self):
-        pass
+# ↓のリストには、メンバーの各オススメ学食が格納されます。
+data = [GakushokuSample(), ]
+
+for rank, d in enumerate(data, start=1):
+
+    print(f"{rank}位: {d.get_menu()}")
+    print("---------------------------------")
+    print(d.get_summary())
+    print(d.get_author())
+    print()
