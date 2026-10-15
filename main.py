@@ -7,6 +7,7 @@ data = [GakushokuSample(),
         KobatomoOsusume(),
         SuzukiOsusume()
 ]
+main
 
 for rank, d in enumerate(data, start=1):
 
